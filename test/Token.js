@@ -87,7 +87,7 @@ describe("Token contract", function () {
       );
 
       // Transfer 50 tokens from owner to addr1
-      await expect(hardhatToken.transfer(addr1.address, 50))
+      await expect(hardhatToken.transfer(addr1.address, 51))
         .to.emit(hardhatToken, "Transfer")
         .withArgs(owner.address, addr1.address, 50);
 
